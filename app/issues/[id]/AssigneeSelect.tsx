@@ -1,10 +1,10 @@
 "use client";
+import { Skeleton } from '@/app/components';
 import { Issue, User } from "@prisma/client";
 import { Select } from "@radix-ui/themes";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Skeleton } from '@/app/components';
+import toast, { Toaster } from "react-hot-toast";
 
 const AssigneeSelect = ({ issue }: { issue: Issue }) => {
     const {
@@ -26,11 +26,14 @@ if (error) return null;
 
 
   return (
+    <>
     <Select.Root
     defaultValue={issue.assignedToUserId || ""}
     onValueChange={(userId) => {
       axios.patch("/api/issues/" + issue.id, {
         assignedToUserId: userId === "unassigned" ? null : userId,
+      }).catch(() => {
+        toast.error("Change could not be saved")
       });
     }}
   >
@@ -47,6 +50,8 @@ if (error) return null;
         </Select.Group>
       </Select.Content>
     </Select.Root>
+    <Toaster />
+    </>
   );
 };
 
