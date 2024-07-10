@@ -41,7 +41,7 @@ const IssuesPage = async ({
         <Table.Header>
           <Table.Row>
             {columns.map((columns) => (
-              <Table.ColumnHeaderCell key={columns.value}>
+              <Table.ColumnHeaderCell key={columns.value} className={columns.className}>
                 <NextLink href={
                   {
                     query: { ...searchParams, orderBy: columns.value },
