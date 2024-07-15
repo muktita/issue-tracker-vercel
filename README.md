@@ -44,4 +44,8 @@ To set up the project locally, follow these steps:
    cd issue-tracker-app
 2. Install dependencies
    ```npm install
+3. Set up environment variables by creating a .env file in the root directory
+```DATABASE_URL=mysql://user:password@localhost:3306/issue-tracker
+JWT_SECRET=your_jwt_secret
+
    
