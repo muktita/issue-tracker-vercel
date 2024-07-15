@@ -27,7 +27,7 @@ The Issue Tracker App is a powerful tool that enables teams to track, manage, an
 - **Frontend:** NextJS (TypeScript)
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL with Prisma
-- **Authentication**: JGoolge Cloud, JWT
+- **Authentication**: Goolge Cloud, JWT
 - **Styling**: RadixUI, CSS, Bootstrap
 
 
