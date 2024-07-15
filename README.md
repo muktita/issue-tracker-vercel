@@ -44,5 +44,12 @@ To set up the project locally, follow these steps:
    ```sh
    DATABASE_URL=mysql://user:password@localhost:3306/issue-tracker
    JWT_SECRET=your_jwt_secret
+4. Set up the database using Prisma
+   ```sh
+   npx prisma migrate dev --name init
+   npx prisma db seed
+5. Start the application
+   ```sh
+   npm start
 
    
