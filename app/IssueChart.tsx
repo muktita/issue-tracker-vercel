@@ -7,6 +7,7 @@ import {
   XAxis,
   YAxis,
   Bar,
+  Cell,
 } from 'recharts';
 import React from 'react';
 
@@ -18,9 +19,9 @@ interface Props {
 
 const IssueChart = ({ open, inProgress, closed }: Props) => {
   const data = [
-    { label: 'Open', value: open, fill: 'red' },
-    { label: 'In Progress', value: inProgress, fill: 'yellow' },
-    { label: 'Closed', value: closed, fill: 'green' },
+    { label: 'Open', value: open, color: 'var(--color-open)' },
+    { label: 'In Progress', value: inProgress, color: 'var(--color-in-progress)' },
+    { label: 'Closed', value: closed, color: 'var(--color-closed)' },
   ];
 
   return (
@@ -29,11 +30,11 @@ const IssueChart = ({ open, inProgress, closed }: Props) => {
         <BarChart data={data}>
           <XAxis dataKey="label" />
           <YAxis />
-          <Bar
-            dataKey="value"
-            barSize={60}
-            // style={{ fill: 'var(--accent-9)' }}
-          />
+          <Bar dataKey="value" barSize={60}>
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={entry.color} />
+            ))}
+          </Bar>
         </BarChart>
       </ResponsiveContainer>
     </Card>

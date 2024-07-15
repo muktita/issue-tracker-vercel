@@ -25,3 +25,9 @@ body {
     @apply text-zinc-500 hover:text-zinc-800 transition-colors
   }
 }
+
+:root {
+  --color-open: #be2121; /* Red */
+  --color-in-progress: #dddd33; /* Yellow */
+  --color-closed: #148114; /* Green */
+}
