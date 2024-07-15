@@ -1,47 +1,47 @@
-# Issue Tracker
+# Issue Tracker App
 
-![Logo](path_to_logo_image_if_applicable)
-
-An Issue Tracker application built using modern web technologies. This project is designed to help teams manage issues, tasks, and project progress efficiently.
+A comprehensive Issue Tracker application designed to help teams efficiently manage their projects and tasks.
 
 ## Table of Contents
 
+- [Summary](#summary)
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
+
+## Summary
+
+The Issue Tracker App is a powerful tool that enables teams to track, manage, and resolve issues within their projects. With features like issue assignment, progress tracking, and real-time notifications, it streamlines project management and enhances team collaboration.
 
 ## Features
 
-- **User Authentication:** Secure user login and registration.
+- **User Authentication:** Secure user registration and login.
 - **Issue Management:** Create, update, delete, and assign issues.
-- **Project Tracking:** Track progress of projects and individual tasks.
-- **Notifications:** Get notified about updates and changes.
-- **Comment System:** Discuss issues and solutions within the platform.
-- **Search Functionality:** Easily find issues and tasks.
-- **Responsive Design:** Accessible on various devices.
-
-## Demo
-
-Check out the live demo of the application [here](https://example.com).
-
-![Demo Screenshot](path_to_screenshot_image_if_applicable)
+- **Project Tracking:** Monitor the progress of projects and tasks.
+- **Real-Time Notifications:** Stay updated with instant notifications.
+- **Commenting System:** Collaborate by discussing issues within the app.
+- **Search Functionality:** Easily find issues and projects.
+- **Responsive Design:** Optimized for use on any device.
 
 ## Installation
 
-To get a local copy up and running, follow these simple steps:
+To set up the project locally, follow these steps:
 
 ### Prerequisites
 
 - Node.js and npm installed
-- MongoDB installed and running
+- MySQL database
 
-### Setup
+### Steps
 
 1. Clone the repository
    ```sh
-   [git clone https://github.com/mosh-hamedani/issue-tracker.git](https://github.com/muktita/issue-tracker-app.git)
-   cd issue-tracker
+   git clone https://github.com/muktita/issue-tracker-app.git
+   cd issue-tracker-app
+2. Install dependencies
+   ```npm install
+   
