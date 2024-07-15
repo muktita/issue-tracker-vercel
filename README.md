@@ -38,9 +38,11 @@ To set up the project locally, follow these steps:
    git clone https://github.com/muktita/issue-tracker-app.git
    cd issue-tracker-app
 2. Install dependencies
-   ```npm i
+   ```sh
+   npm i
 3. Set up environment variables by creating a .env file in the root directory
-```DATABASE_URL=mysql://user:password@localhost:3306/issue-tracker
-JWT_SECRET=your_jwt_secret
+   ```sh
+   DATABASE_URL=mysql://user:password@localhost:3306/issue-tracker
+   JWT_SECRET=your_jwt_secret
 
    
