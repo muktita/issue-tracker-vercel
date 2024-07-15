@@ -41,7 +41,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository
    ```sh
    git clone https://github.com/muktita/issue-tracker-app.git
-   cd issue-tracker-app
+   cd issue-tracker-app```
 2. Install dependencies
-   ```npm install
+   ```npm install```
    
