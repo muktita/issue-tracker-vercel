@@ -18,9 +18,9 @@ interface Props {
 
 const IssueChart = ({ open, inProgress, closed }: Props) => {
   const data = [
-    { label: 'Open', value: open },
-    { label: 'In Progress', value: inProgress },
-    { label: 'Closed', value: closed },
+    { label: 'Open', value: open, fill: 'red' },
+    { label: 'In Progress', value: inProgress, fill: 'yellow' },
+    { label: 'Closed', value: closed, fill: 'green' },
   ];
 
   return (
@@ -32,7 +32,7 @@ const IssueChart = ({ open, inProgress, closed }: Props) => {
           <Bar
             dataKey="value"
             barSize={60}
-            style={{ fill: 'var(--accent-9)' }}
+            // style={{ fill: 'var(--accent-9)' }}
           />
         </BarChart>
       </ResponsiveContainer>
