@@ -6,8 +6,9 @@ A comprehensive Issue Tracker application designed to help teams efficiently man
 
 - [Summary](#summary)
 - [Features](#features)
-- [Installation](#installation)
 - [Technologies](#technologies)
+- [Installation](#installation)
+
 ## Summary
 
 The Issue Tracker App is a powerful tool that enables teams to track, manage, and resolve issues within their projects. With features like issue assignment, progress tracking, and real-time notifications, it streamlines project management and enhances team collaboration.
@@ -21,6 +22,14 @@ The Issue Tracker App is a powerful tool that enables teams to track, manage, an
 - **Commenting System:** Collaborate by discussing issues within the app.
 - **Search Functionality:** Easily find issues and projects.
 - **Responsive Design:** Optimized for use on any device.
+
+## Technologies
+- **Frontend:** React.js, Redux
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL with Prisma
+- **Authentication**: JGoolge Cloud, JWT
+- **Styling**: RadixUI, CSS, Bootstrap
+
 
 ## Installation
 
