@@ -6,6 +6,7 @@ A comprehensive Issue Tracker application designed to help teams efficiently man
 
 - [Summary](#summary)
 - [Features](#features)
+- [Demo](#demo)
 - [Technologies](#technologies)
 - [Installation](#installation)
 
@@ -22,6 +23,9 @@ The Issue Tracker App is a powerful tool that enables teams to track, manage, an
 - **Commenting System:** Collaborate by discussing issues within the app.
 - **Search Functionality:** Easily find issues and projects.
 - **Responsive Design:** Optimized for use on any device.
+
+## Demo
+https://muktita-issue-tracker.vercel.app/
 
 ## Technologies
 - **Frontend:** NextJS (TypeScript)
