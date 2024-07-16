@@ -5,6 +5,7 @@ import { IssueStatusBadge } from './components';
 import Link from 'next/link';
 
 const LatestIssues = async () => {
+  // Fetch the latest 5 issues with the assigned user
   const issues = await prisma.issue.findMany({
     orderBy: { createdAt: 'desc' },
     take: 5,
@@ -12,6 +13,9 @@ const LatestIssues = async () => {
       assignedToUser: true,
     },
   });
+
+  // Log fetched issues for debugging
+  console.log('Fetched issues:', issues);
 
   return (
     <Card>
@@ -30,7 +34,7 @@ const LatestIssues = async () => {
                   </Flex>
                   {issue.assignedToUser && (
                     <Avatar
-                      src={issue.assignedToUser.image!}
+                      src={issue.assignedToUser.image || '/default-avatar.png'} // Provide a default image URL
                       fallback="?"
                       size="2"
                       radius="full"
