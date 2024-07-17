@@ -14,9 +14,6 @@ const LatestIssues = async () => {
     },
   });
 
-  // Log fetched issues for debugging
-  console.log('Fetched issues:', issues);
-
   return (
     <Card>
       <Heading size="4" mb="5">Latest Issues</Heading>
