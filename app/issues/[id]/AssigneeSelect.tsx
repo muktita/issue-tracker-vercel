@@ -35,8 +35,6 @@ const AssigneeSelect = ({ issue }: { issue: Issue }) => {
         });
     }
 
-    // Log users to inspect the data
-    console.log("Users fetched from API:", users);
 
     // Render the select component
     return (
@@ -68,7 +66,6 @@ const useUsers = () => useQuery<User[]>({
     queryKey: ["users"],
     queryFn: () =>
         axios.get("/api/users").then((res) => {
-            console.log("Response from /api/users:", res.data); // Log the response data
             return res.data;
         }),
     staleTime: 60 * 1000, // 60 seconds
